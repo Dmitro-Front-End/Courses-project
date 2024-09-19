@@ -1,0 +1,293 @@
+/* index */
+
+.contentContainer {
+  box-shadow: none !important;
+}
+
+/* style to TopNavigate */
+
+.mainDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  margin-bottom: 24px;
+  margin-top: 16px;
+  color: #28282b;
+
+  i {
+    width: 15px;
+    height: 15px;
+    fill: #28282b;
+  }
+  .divStudents {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 8px;
+
+    color: #6c24dd;
+    i {
+      fill: #6c24dd;
+      /* stroke-c : #6C24DD; */
+    }
+  }
+  .topNavigateSlesh {
+    font-size: 15px;
+    color: #87878a;
+    margin-right: 5px;
+  }
+
+  .divUsername {
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+  }
+  .pElem {
+    padding-left: 4px;
+  }
+}
+
+/* style to OpenStudents */
+
+.blockStudents {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  height: 148px;
+  background-color: #f8f9fd;
+  border-radius: var(--border-radius);
+  padding: 24px;
+  box-shadow: -2px 4px 50px rgba(19, 17, 32, 0.2);
+  margin-bottom: 25px;
+
+  .divStudentsData {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    h1 {
+      /* font-family: Arial, Helvetica, sans-serif; */
+      font-weight: 500;
+      font-size: 24px;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        color: #87878a;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #181819;
+      }
+    }
+
+    button {
+      padding: 4px 12px;
+      font-weight: 500;
+      font-size: 12px;
+      color: #f8f9fd;
+      border-radius: 24px;
+      background-color: #17b417;
+      line-height: 17px;
+    }
+  }
+}
+
+/* SidebarLeft */
+.sidebarLeft_cont {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.navigate_container {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.activeSidebarListItem {
+  background-color: #6c24dd;
+  color: #f8f9fd;
+  fill: #f8f9fd;
+  box-shadow: 0px 2px 30px rgba(123, 54, 241, 0.3);
+  border-radius: 6px;
+}
+
+/* StudentContant */
+.studetsContentLoading {
+  padding: 20px 0;
+}
+
+/* StudentsModal */
+.modalGlobal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--header-z-index);
+  /* background-color: #1818193a; */
+}
+
+.StudentsModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  max-width: 600px;
+  width: calc(96% - 100px);
+  padding: 50px 60px;
+  /* height: 780px; */
+  background-color: rgba(135, 135, 138, 1);
+  border-radius: var(--border-radius);
+  .bntCloseModal {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background-color: rgb(22, 56, 191);
+    width: 32px;
+    height: 32px;
+    border-radius: var(--border-radius);
+    padding: 5px;
+  }
+  .ModalTop {
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    span {
+      margin-top: 8px;
+      color: rgba(92, 92, 94, 1);
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+
+    .inputSearchDiv {
+        margin-top: 24px;
+      position: relative;
+      span {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(92, 92, 94, 1);
+      }
+      input {
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 48px;
+        width: 472px;
+        height: 40px;
+        border-radius: var(--border-radius);
+        color: rgba(135, 135, 138, 1);
+        border: 1px solid rgb(75, 76, 79);
+      }
+      i {
+        position: absolute;
+        left: 16px;
+        top: 7px;
+        width: 9;
+        height: 9;
+      }
+    }
+  }
+  .modalCloseandSendBlock {
+    margin-top: 34px;
+    margin-left: 203px;
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    .btnClose {
+      border-radius: 40px;
+      padding: 8px 24px;
+      color: rgba(92, 92, 94, 1);
+      background-color: rgba(217, 218, 222, 1);
+    }
+
+    .btnSend {
+      background-color: rgba(125, 71, 249, 1);
+      color: rgba(248, 249, 253, 1);
+      border-radius: 40px;
+      padding: 8px 43px;
+    }
+  }
+}
+
+/* Students */
+.studentList {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+.colTitleNameBorder {
+  border-left: 2px solid rgba(217, 218, 222, 1);
+  padding-left: 35px;
+}
+.colTitleName {
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.colStatus {
+  padding: 3px 10px;
+  border-radius: 9px;
+  text-align: center;
+  width: auto;
+
+  font-size: 12px;
+
+}
+
+.paginationCont {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+.modalOptionsBlock {
+    margin-left: -100px;
+    /* display: flex;
+    align-items: start;
+    flex-direction: column; */
+    h2 {
+        margin-top: 24px;
+    }
+}
+
+
+/* check box div styles */
+
+.modalOptionsBox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+
+    input {
+        color: rgba(125, 71, 249, 1);
+    }
+
+    p {
+        color: rgba(24, 24, 25, 1);
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
